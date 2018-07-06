@@ -1,11 +1,9 @@
 import React, { Component } from 'react'
-import logo from './logo.svg'
 import classes from './App.css'
 import Hero from './components/Hero/Hero'
 import ScrollMagic from './ScrollMagic'
 import { TimelineMax, Linear } from 'gsap'
 import { jquery as $ } from 'jquery'
-import * as SparkScroll from 'react-spark-scroll-gsap'
 import About from './components/About/About'
 import NavBar from './components/NavBar/NavBar'
 import MyWork from './components/MyWork/MyWork'
@@ -15,33 +13,33 @@ class App extends Component {
   componentDidMount () {
     const controller = new ScrollMagic.Controller()
 
-    const wipeAnimation = new TimelineMax()
-      .fromTo(
-        `section.${classes.Panel}.${classes.Next}`,
-        1,
-        { y: '-100%' },
-        { y: '0%', ease: Linear.easeNone }
-      )
-      .fromTo(
-        `section.${classes.Panel}.${classes.NextAgain}`,
-        1,
-        { y: '-100%' },
-        { y: '0%', ease: Linear.easeNone }
-      )
+//     const wipeAnimation = new TimelineMax()
+//       .fromTo(
+//         `section.${classes.Panel}.${classes.Next}`,
+//         1,
+//         { y: '-100%' },
+//         { y: '0%', ease: Linear.easeNone }
+//       )
+//       .fromTo(
+//         `section.${classes.Panel}.${classes.NextAgain}`,
+//         1,
+//         { y: '-100%' },
+//         { y: '0%', ease: Linear.easeNone }
+//       )
 
-    new ScrollMagic.Scene({
-      triggerElement: '#PinContainer',
-      triggerHook: 'onLeave',
-      duration: '300%'
-    })
-      .setPin('#PinContainer')
-      .setTween(wipeAnimation)
-      .addTo(controller)
-  }
+//     new ScrollMagic.Scene({
+//       triggerElement: '#PinContainer',
+//       triggerHook: 'onLeave',
+//       duration: '300%'
+//     })
+//       .setPin('#PinContainer')
+//       .setTween(wipeAnimation)
+//       .addTo(controller)
+//   }
   render () {
     return (
       <div className={'App'}>
-        <div id='PinContainer' className={classes.NotPinContainer}>
+        <div id='PinContainer' className={classes.PinContainer}>
 
           <NavBar />
           <Switch>
@@ -66,4 +64,4 @@ class App extends Component {
   }
 }
 
-export default App
+export default Home

@@ -1,0 +1,30 @@
+section {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 5px;
+}
+
+.Image {
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+.Flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.RowOne {
+    display: flex;
+}
+
+h1 {
+    padding-top: 50px !important;
+    padding-left: 50px !important
+}
+
+h2 {
+    padding-top: 50px !important;
+    
+}

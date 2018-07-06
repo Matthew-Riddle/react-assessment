@@ -1,0 +1,42 @@
+.PinContainer {
+    position: relative;
+    margin: auto;
+    top: 0px;
+    left: 0px;
+    bottom: auto;
+    right: auto;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
+  }
+  
+  .Panel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+  }
+  
+  .Next {
+    background: black;
+  }
+  
+  .NextAgain {
+    background: red;
+  }
+  
+  .NotPinContainer {
+    position: relative;
+    margin: auto;
+    top: 0px;
+    left: 0px;
+    bottom: auto;
+    right: auto;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    /* overflow: hidden; */
+  }

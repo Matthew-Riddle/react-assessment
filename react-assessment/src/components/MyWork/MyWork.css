@@ -1,0 +1,68 @@
+.Black{
+    background-color: black;
+}
+
+.GreenYellow{
+    background-color: greenyellow;
+}
+
+.DarkGrey {
+    background-color: rgb(41, 41, 41);
+}
+
+body{
+    background-color: rgb(56, 27, 27);
+}
+
+section {
+    background-color: rgb(41, 41, 41);
+}
+
+h1 {
+    font-size: 50px;
+    color: yellow;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.FullWidth {
+    width: 100vw;
+}
+
+.FullHeight {
+    height:inherit;
+}
+
+.Backdrop {
+    background-image: url('../../cubicbackdrop.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.TextBackdrop {
+    background-color: rgba(0, 0, 0, 0.856);
+    position: relative;
+}
+
+p {
+    color: yellow;
+    text-align: justify;
+    font-size: 24px;
+    padding: 10%;
+    border: 1px solid white;
+}
+
+.Tall{
+    height: 200px;
+}
+
+a {
+    font-size: 24px;
+}
+
+.FontAwesome {
+    font-size: 54px;
+    display: inline-block;
+    padding: 5px;
+}
